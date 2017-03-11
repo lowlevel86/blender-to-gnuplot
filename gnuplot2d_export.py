@@ -128,7 +128,7 @@ def ExportToGNU(file_name):
 	# return if found no meshes
 	
 	if meshes == []:
-		print "No meshes found."
+		print("No meshes found.")
 		return
 
 	# sort meshes alphabetically
@@ -337,7 +337,7 @@ def ExportToGNU(file_name):
 
 			file.write("\""+keyName+".dat\" title \""+keyName+"\" with points pointsize 0.5 pointtype 7")
 
-     	file.write("\n")
+		file.write("\n")
 
 	file.close()
 	
@@ -441,7 +441,7 @@ def ExportToGNU(file_name):
 			call(['gnuplot', file_name.split('\\')[-1].split('/')[-1]], cwd=gnuWorkingDir)
 		except OSError as e:
 			if e.errno == os.errno.ENOENT:
-				print "Note: The blender python script needs to be able to execute gnuplot."
+				print("Note: The blender python script needs to be able to execute gnuplot.")
 	
 	
 	# display in wxWidgets windowed
@@ -467,7 +467,7 @@ def ExportToGNU(file_name):
 					call(['gnuplot', '-persist', file_name_wxt.split('\\')[-1].split('/')[-1]], cwd=gnuWorkingDir)
 				except OSError as e:
 					if e.errno == os.errno.ENOENT:
-						print "Note: The blender python script needs to be able to execute gnuplot."
+						print("Note: The blender python script needs to be able to execute gnuplot.")
 	
 
 	if showBlenderWinToggle:
@@ -525,13 +525,13 @@ def button_event(evt):
 	if evt == 5:
 		showBlenderWinToggle = 1^showBlenderWinToggle
 		showGnuplotWinToggle = 0
-  		Draw.Redraw(1)
+		Draw.Redraw(1)
 
 	# show in gnuplot window
 	if evt == 6:
 		showGnuplotWinToggle = 1^showGnuplotWinToggle
 		showBlenderWinToggle = 0
-  		Draw.Redraw(1)
+		Draw.Redraw(1)
 
 	# render image
 	if evt == 7:
@@ -540,7 +540,7 @@ def button_event(evt):
 	if renderImgToggle == 0:
 		showBlenderWinToggle = 0
 		showGnuplotWinToggle = 0
-  		Draw.Redraw(1)
+		Draw.Redraw(1)
 
 	# lock zoom
 	if evt == 8:
