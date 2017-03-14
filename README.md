@@ -1,9 +1,9 @@
 # blender-to-gnuplot
 These export scripts will make it easier to render colored points, lines, and faces within blender 2.49b.
 
-![alt tag](https://github.com/lowlevel86/blender-to-gnuplot/blob/master/blender_to_gnuplot_1.png)
+![blender_gnuplot](https://github.com/lowlevel86/blender-to-gnuplot/blob/master/blender_to_gnuplot_1.png "gnuplot2d_export.py example")
 
-![alt tag](https://github.com/lowlevel86/blender-to-gnuplot/blob/master/blender_to_gnuplot_2.png)
+![blender_gnuplot](https://github.com/lowlevel86/blender-to-gnuplot/blob/master/blender_to_gnuplot_2.png "gnuplot3d_export.py example")
 
 Note: It is possible to easily change the initial toggle settings in the python scripts.
 
