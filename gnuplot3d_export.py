@@ -203,7 +203,7 @@ def ExportToGNU(file_name):
 	file.write("#set title \"Graph Title\"\n")
 	file.write("#set xlabel \"X\"\n")
 	file.write("#set ylabel \"Y\"\n")
-	file.write("#set ylabel \"Z\"\n")
+	file.write("#set zlabel \"Z\"\n")
 	file.write("\n")
 	file.write("# sets background color\n")
 	file.write("set object 1 rectangle from screen -0.1,-0.1 to screen 1.1,1.1 fillcolor rgb \"#"+bgR+bgG+bgB+"\" behind\n")
