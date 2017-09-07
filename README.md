@@ -5,6 +5,8 @@ These export scripts will make it easier to render colored points, lines, and fa
 
 ![blender_gnuplot](https://github.com/lowlevel86/blender-to-gnuplot/blob/master/blender_to_gnuplot_2.png "gnuplot3d_export.py example")
 
+![blender_gnuplot](https://github.com/lowlevel86/blender-to-gnuplot/blob/master/blender_to_gnuplot_3.png "another example")
+
 Note: It is possible to easily change the initial toggle settings in the python scripts.
 
 Note: It is possible to export to .svg (W3C Scalable Vector Graphics) format by changing 'pngcairo' to 'svg' and changing '.png' to '.svg'. It is also possible to change to HTML Canvas object used in a .html file or to anything gnuplot can handle just type 'set terminal' in the gnuplot terminal.
