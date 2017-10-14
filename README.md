@@ -20,3 +20,5 @@ Install instructions:
 Place scripts into the blender 2.49b python scripts directory and then click 'Update Menus' in the 'Scripts Window'. They then should show up in 'Export'.
 
 If installing gnuplot 4.6.6 for windows make sure to click the 'Add application directory to your PATH environment variable'.
+
+[paypal.me/CMogged](https://www.paypal.me/CMogged)
