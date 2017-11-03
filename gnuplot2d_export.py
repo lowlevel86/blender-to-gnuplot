@@ -337,8 +337,6 @@ def ExportToGNU(file_name):
 
 			file.write("\""+keyName+".dat\" title \""+keyName+"\" with points pointsize 0.5 pointtype 7")
 
-		file.write("\n")
-
 	file.close()
 	
 	
