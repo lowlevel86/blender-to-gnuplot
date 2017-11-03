@@ -522,7 +522,7 @@ def button_event(evt):
 
 	# save to animations path
 	if evt == 2:
-		file_name = Blender.sys.makename(ext='.gnu').split('/')[-1]
+		file_name = Blender.sys.makename(ext='.gnu').split('/')[-1].split('\\')[-1]
 		file_path = Blender.Scene.GetCurrent().getRenderingContext().getRenderPath()
 		ExportToGNU(file_path+file_name)
 
