@@ -7,23 +7,23 @@ Group: 'Export'
 Tip: 'Export for use with gnuplot.'
 """
 
-# You can do whatever you want with this code
+__bpydoc__ = """\
+Usage:
 
-# Usage:
+Press 'n' to view the "Transform Properties" window
+Change the object name "OB:" to control line, point, or face style and color
 
-# Press 'n' to view the "Transform Properties" window
-# Change the object name "OB:" to control line, point, or face style and color
+Examples:
 
-# Examples:
+To render an object with green points and a point size of 0.4
+p0.4-#00FF00-Cube
 
-# To render an object with green points and a point size of 0.4
-# p0.4-#00FF00-Cube
+To render an object with red lines and a line width of 1.3
+l1.3-red-Cone
 
-# To render an object with red lines and a line width of 1.3
-# l1.3-red-Cone
-
-# To render an object with faces, gray edges and a line width of 0.8
-# f0.8-#888888-Plane
+To render an object with faces, gray edges and a line width of 0.8
+f0.8-#888888-Plane
+"""
 
 
 import Blender
@@ -355,9 +355,9 @@ def ExportToGNU(file_name):
 					keyName += "_"
 
 			keyNameArray.append(keyName)
-			pointLineFaceArray.append("p")
+			pointLineFaceArray.append("l")
 
-			file.write("\""+keyName+".dat\" title \""+keyName+"\" with points pointsize 0.5 pointtype 7")
+			file.write("\""+keyName+".dat\" title \""+keyName+"\" with lines linewidth 1.0")
 
 	file.close()
 	
